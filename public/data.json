@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/85HFQL3/Rectangle-2-2.png",
+    "course_name": "Introduction to C Programming",
+    "course_details": "A foundational course introducing C, a versatile programming language, covering syntax, data types, control structures, and basic program development concepts.",
+    "credit": 1,
+    "price": 15000
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/QmGqPFQ/Rectangle-2-3.png",
+    "course_name": "Introduction to Algorithms",
+    "course_details": "This course offers a comprehensive overview of key algorithmic concepts, data structures, and problem-solving techniques for efficient algorithm design and analysis.",
+    "credit": 2,
+    "price": 25000
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/rMLBVwZ/Rectangle-2-4.png",
+    "course_name": "Introduction to C++ for DSA",
+    "course_details": "Learn C++ with a focus on Data Structures and Algorithms, covering object-oriented programming, STL, and advanced topics for efficient problem-solving.",
+    "credit": 10,
+    "price": 10000
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/LNBKwJ5/Rectangle-3.png",
+    "course_name": "Basic Data Structures",
+    "course_details": "Learn the fundamental data structures such as arrays, linked lists, stacks, and queues, essential for efficient information organization and retrieval in programming.",
+    "credit": 5,
+    "price": 350000
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/3pRQ3QR/Rectangle-2.png",
+    "course_name": "Introduction to OOP Python",
+    "course_details": "Introduction to OOP Python teaches fundamental Object-Oriented Programming in Python, covering classes, inheritance, and code organization for building efficient, modular software.",
+    "credit": 5,
+    "price": 19000
+  },
+  {
+    "id": 6,
+    "img": "https://i.ibb.co/bmXH6h3/Rectangle-2-5.png",
+    "course_name": "Software Engineering",
+    "course_details": "Explore the principles and practices of software development, including requirements analysis, design, testing, and project management, to create robust and scalable software solutions.",
+    "credit": 2,
+    "price": 23000
+  },
+  {
+    "id": 7,
+    "img": "https://i.ibb.co/CtKSZP0/Rectangle-3-1.png",
+    "course_name": "AWS, Cloud Computing",
+    "course_details": "Explore AWS services, cloud infrastructure, and best practices for scalable, secure, and cost-effective cloud computing solutions and deployments.",
+    "credit": 5,
+    "price": 350000
+  },
+  {
+    "id": 8,
+    "img": "https://i.ibb.co/hyDwygQ/Rectangle-2-1.png",
+    "course_name": "Database (MySQL)",
+    "course_details": "This course explores MySQL, a popular relational database management system, covering data modeling, SQL queries, and database administration for efficient data storage and retrieval.",
+    "credit": 5,
+    "price": 19000
+  },
+
+  {
+    "id": 9,
+    "img": "https://i.ibb.co/2jDgfvP/Rectangle-2-6.png",
+    "course_name": "Problem-Solving Part",
+    "course_details": "Develop essential problem-solving skills, including critical thinking and creative approaches, to tackle complex challenges effectively and find innovative solutions.",
+    "credit": 2,
+    "price": 230000
+  }
+]
