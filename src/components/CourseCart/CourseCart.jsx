@@ -14,7 +14,17 @@ const CourseCart = ({ selectedCourse, creditRemaining }) => {
     <div className="w-1/3">
       <div className="card bg-white rounded-xl p-4 shadow-lg">
         <h2 className="text-[#2F80ED] font-bold text-lg ">
-          Credit Hour Remaining {creditRemaining} hr
+          Credit Hour Remaining{" "}
+          {creditRemaining < 0 ? (
+            <div className="toast toast-top toast-center">
+              <div className="alert alert-info">
+                <span>Remaining Credit can not be negative</span>
+              </div>
+            </div>
+          ) : (
+            creditRemaining
+          )}{" "}
+          hr
         </h2>
         <div className="border-b border-b-gray-300 my-4"></div>
         <h2 className="text-black font-bold text-xl">Course Name</h2>
@@ -27,7 +37,16 @@ const CourseCart = ({ selectedCourse, creditRemaining }) => {
         </div>
         <div className="border-b border-b-gray-300 my-4"></div>
         <h3 className="text-black font-[500]">
-          Total Credit Hour: {totalCredit}
+          Total Credit Hour:{" "}
+          {totalCredit > 20 ? (
+            <div className="toast toast-top toast-right">
+              <div className="alert alert-info">
+                <span>You can not take 20 credit</span>
+              </div>
+            </div>
+          ) : (
+            totalCredit
+          )}
         </h3>
         <div className="border-b border-b-gray-300 my-4"></div>
         <h3 className="text-black font-[500]">
