@@ -24,9 +24,8 @@ const CourseCart = ({ selectedCourse, creditRemaining }) => {
               </div>
             </div>
           ) : (
-            creditRemaining
+            creditRemaining + " hr"
           )}{" "}
-          hr
         </h2>
         <div className="border-b border-b-gray-300 my-4"></div>
         <h2 className="text-black font-bold text-xl">Course Name</h2>
