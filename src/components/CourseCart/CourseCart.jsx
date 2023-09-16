@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 const CourseCart = ({ selectedCourse, creditRemaining }) => {
   //   console.log(currentCredit);
+
   let totalCredit = 0;
   let totalPrice = 0;
   for (const course of selectedCourse) {
@@ -10,6 +11,7 @@ const CourseCart = ({ selectedCourse, creditRemaining }) => {
     // creditRemaining = creditRemaining - currentCredit.credit;
     // setCreditRemaining(creditRemaining);
   }
+
   return (
     <div className="lg:w-1/3 mt-10 lg:mt-0">
       <div className="card bg-white rounded-xl p-4 shadow-lg">
@@ -50,7 +52,7 @@ const CourseCart = ({ selectedCourse, creditRemaining }) => {
         </h3>
         <div className="border-b border-b-gray-300 my-4"></div>
         <h3 className="text-black font-[500]">
-          Total Price : {totalPrice} USD
+          Total Price : {creditRemaining < 0 ? 0 : totalPrice} USD
         </h3>
       </div>
     </div>
