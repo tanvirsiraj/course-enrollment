@@ -2,18 +2,29 @@ import { useEffect, useState } from "react";
 import CourseCart from "./components/CourseCart/CourseCart";
 import Courses from "./components/Courses/Courses";
 import Header from "./components/Header/Header";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   const [selectedCourse, setSelectedCourse] = useState([]);
   let [creditRemaining, setCreditRemaining] = useState(20);
   const [id, setId] = useState(0);
   const handledSelectedCourse = (course, id) => {
     // console.log("hello", id);
-    const newCourses = [...selectedCourse, course];
 
-    //   console.log(id);
+    const duplicateSelected = selectedCourse.find(
+      (selectedCourse) => selectedCourse.id === course.id
+    );
+    if (duplicateSelected) {
+      toast.warn("Already Selected", {
+        theme: "dark",
+      });
+    } else {
+      const newSelected = [...selectedCourse, course];
+      setSelectedCourse(newSelected);
+    }
 
-    setSelectedCourse(newCourses);
+    /*  const newCourses = [...selectedCourse, course];
+    setSelectedCourse(newCourses); */
 
     setId(id);
   };
@@ -39,6 +50,7 @@ function App() {
           id={id}
         ></CourseCart>
       </main>
+      <ToastContainer />
     </div>
   );
 }

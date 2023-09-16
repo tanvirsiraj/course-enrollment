@@ -41,7 +41,7 @@ const CourseCart = ({ selectedCourse, creditRemaining }) => {
           {totalCredit > 20 ? (
             <div className="toast toast-top toast-right">
               <div className="alert alert-info">
-                <span>You can not take 20 credit</span>
+                <span>You can not take more than 20 credit</span>
               </div>
             </div>
           ) : (
