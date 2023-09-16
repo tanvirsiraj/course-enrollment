@@ -30,8 +30,9 @@ function App() {
   return (
     <div className="mb-20">
       <Header></Header>
-      <main className="max-w-7xl mx-auto mt-8 flex justify-between gap-6">
+      <main className="lg:max-w-7xl p-2 lg:p-0 mx-auto mt-8 lg:flex justify-between gap-6 ">
         <Courses handledSelectedCourse={handledSelectedCourse}></Courses>
+
         <CourseCart
           creditRemaining={creditRemaining}
           selectedCourse={selectedCourse}

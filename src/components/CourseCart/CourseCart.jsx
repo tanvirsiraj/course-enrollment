@@ -11,7 +11,7 @@ const CourseCart = ({ selectedCourse, creditRemaining }) => {
     // setCreditRemaining(creditRemaining);
   }
   return (
-    <div className="w-1/3">
+    <div className="lg:w-1/3 mt-10 lg:mt-0">
       <div className="card bg-white rounded-xl p-4 shadow-lg">
         <h2 className="text-[#2F80ED] font-bold text-lg ">
           Credit Hour Remaining{" "}
